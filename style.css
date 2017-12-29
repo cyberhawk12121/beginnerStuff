@@ -1,0 +1,95 @@
+/* getting rid of the padding and margin */
+*{ 
+	margin: 0px auto; padding: 2px; 
+    list-style-type: none; /* It just removes all the bullet points from the lists */
+     
+ }
+ header,nav,article,section,footer
+ {
+ 	display:block; /* it will display all these as block elements and not as inline elements */
+ }
+ .container /* this is to center the Website content */
+ {
+ 	width:1200px;
+ 	margin:0px auto;
+ }
+ body
+{
+	background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+ 
+ .logo
+ {
+ 	height: 150px;
+ 	width: 150px;
+ 	background-color: purple;
+    margin-bottom: 50px;
+    
+ }
+
+ .top_nav
+ {
+ 	float: right ;
+ 	width: 750px;
+    height: 40px;
+ 	margin-right: 60px;
+ }
+ .top_nav ul,li
+ {
+ 	float: left;
+ 	padding: 14px ;
+ }
+ h2,h3
+{
+	color: Yellow;
+}
+ .left_side
+ { 
+ 	border: 3px solid cyan;
+ 	border-radius: 10px;
+    float: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;	
+ }
+ .right_side
+ {  
+ 	border: 5px solid Orange;
+ 	border-radius: 12px;
+ 	float: left;
+ 	width: 20%;
+    padding-top: 20px;
+ 	padding-left: 20px;
+ 	margin-top: 0px;
+ 	margin-left: 30px;
+    line-height: 18px;
+ }
+
+.foot 
+{
+	clear: both;
+	color: Orange;
+}
+p
+{
+	font-size: 20px;
+	color: white;
+	padding: 4px;
+	font-style: helvetica;
+	font: italic;
+
+}
+
+.top_nav 
+{
+	background-color: #9ae038;
+	padding: 20px
+;}

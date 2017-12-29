@@ -1,0 +1,25 @@
+*{
+	padding: 0px; 
+	margin: 0px;
+	list-style-type: none;
+}
+
+.container{
+	width: 1200px;
+	margin: 0px auto;
+	border: 8px groove ; 
+}
+header, section, article, footer, nav{
+	display: block;
+}
+.logo{
+	width: 150px;
+	height: 150px;
+	margin-left: 20px;
+	
+}
+.top_nav{
+	float: right;
+	width: 900px;
+
+}
