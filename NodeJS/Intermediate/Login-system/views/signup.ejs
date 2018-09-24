@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/main.css" />
+</head>
+<body>
+
+    <header class="navbar">
+
+        <ul class="nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Signup</a></li>
+            <li><a href="./login">Login</a></li>
+        </ul>
+
+</header>
+
+<section>
+
+    <p style=" user-select: none ;font-size: 32px; border-bottom: 2px solid rgb(44, 42, 42); padding-left: 20px; background-color: rgb(255, 255, 255);">Register User</p>
+
+    <form method="POST" class="form">
+    
+        <label for="name">Enter Name</label>
+        <input type="text" placeholder="Enter First Name" class="form-control" required>
+
+        <label for="username">Enter Username</label>
+        <input type="email" placeholder="Enter Username" class="form-control" name="username" required>
+
+        <label for="password">Enter Password</label>
+        <input type="password" placeholder="Enter Password" class="form-control" name="password" required   > 
+
+        <label for="password-again">Enter the password Again</label>
+        <input type="password" name="password-again" class="form-control" placeholder="Confirm Password" required>
+    
+        <input type="submit" value="Submit" class="submit">
+
+    </form>
+
+</section>
+
+</body>
+</html>

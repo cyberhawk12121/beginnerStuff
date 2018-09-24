@@ -1,0 +1,51 @@
+<html>
+      <head>
+            <title>JS-11 (Maps) </title> 
+      </head>
+
+<body>
+
+      <script>
+
+            let client= new Map()
+            client.set('name', 'Sameer');
+            client.set('membership', 'Premium')
+            client.set('balance', 4300000);
+            // ACCESS THE VALUES
+            // SYNTAX: <mapName>.get('key');
+            name= client.get('name'); // JUST LIKE ASSOCATIVE ARRAYS OR OBJECTS
+            console.log(name);
+
+            // MAP SIZE
+            console.log(client.size);
+
+            // remove elements from map
+            client.delete('name');
+            console.log(client)
+
+            // DEFAULT VALUES IN MAP
+            client1= new Map([['name','Patient Name'], ['Age', 'Patient Age']]);
+            console.log(client1);
+            client1.set('name', 'tanmay'); // We inserted a value in the 'name' and the default value is deleted      
+            console.log(client1.get('name'));      
+            
+            // forEach revision yet AGAIN
+            client.forEach((list, index) =>{
+            //      console.log(`${index}:  Hello ${client.get('name')}, Your balance is ${client.get('balance')}`);
+                 console.log(`${index}: ${list}` )
+            })
+      /* 
+      sameer= new Map();
+      sameer.set('name', 'Sameer');
+      sameer.set('age', 19);
+      sameer.remove('age');
+      console.log(sameer.get('name'));
+      */
+      
+      
+      </script> 
+
+
+</body>
+
+</html>

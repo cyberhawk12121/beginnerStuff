@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>JS-14 (DOM)</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">     
+</head>
+<body>
+      <h1 id="id"> HELLO WORLD</h1>
+      <p id="id"> HELLO WORLD</p>
+      <p id="id"> HELLO WORLD</p>
+      <p id="id"> HELLO WORLD</p>
+      <p id="id"> HELLO WORLD</p>
+      <script>
+            
+            // console.log(document.getElementById('id').innerHTML);
+            paragraphArray= document.querySelectorAll('p'); // It is actually an ARRAY!!!
+            console.log(paragraphArray[0].innerHTML);
+            // paragraphArray[0].textContent=' Paragraph has been changed';
+            paragraphArray.forEach((text,index) => {
+                  text.textContent= "I'm changed using forEach loop";
+            })
+
+      </script>
+
+</body>
+</html>

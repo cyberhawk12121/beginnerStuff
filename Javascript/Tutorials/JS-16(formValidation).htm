@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>JS-16 (Form Validation) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+            *{
+                  margin: 0%;
+                  padding: 0;
+                  text-decoration:none;
+            }
+            body{
+                  width: 1200px;
+                  display: block;
+            }
+            .user{
+                  padding: 5px;
+                  margin: 20px;
+                  font-size: 15px;
+            }
+            .pass{
+                  padding: 5px;
+                  margin: 20px;
+                  font-size: 15px;
+            } 
+            .submit{
+                  padding: 5px;
+                  margin: 20px;
+                  font-size: 15px;
+                  background: chartreuse;;
+                  color: black;
+                  border: 1px solid #ccc ;
+                  border-radius: 4px;
+            }
+            
+      </style>
+</head>
+<body>
+      
+      <form action="">
+            <input class="user" id="username" type="text" placeholder="Username" name="username"><br>
+            <p id="userError"></p>
+            <input type="password" class="pass" name="pass" placeholder="Password" id="password"><br>
+            <p id="passError"></p>
+            <input type="button" value="Submit" name="submit" class="submit" id="submit1">
+      </form>
+
+
+      <script>
+      
+            document.querySelector('#submit1').addEventListener('click',()=>{
+                  // Retrieving the values of password and username from Form
+                  username=document.querySelector('#username').value;
+                  password = document.querySelector('#password').value;
+                  // ....................... // ........................ //
+                  if (username.length<6) {
+                        document.querySelector('#userError').textContent= "Username must be 7 Characters long" ;
+                        return false;
+                  }
+                 
+                  if (password.length < 6) {
+                        document.querySelector('#passError').textContent = "Password must be 7 Characters long";
+                        return false;
+                  }
+
+            }) 
+            // username= document.
+            // console.log(username);
+
+      </script>
+</body>
+</html>

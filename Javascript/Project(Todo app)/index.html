@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>TODO Application</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+      <!-- Custom Font -->
+      <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      
+</head>
+<body>
+      <!-- Only the HEADING -->
+      <div class="container">
+      <header id="heading">
+            <h1><em><a href="">TODO APPLICATION</a></em></h1>
+      </header>
+
+      <!-- Part where one can add or remove activities -->
+      <header class="header">
+            <h2>Enter the activities for day</h2>
+            <!-- FORM STARTS HERE -->
+            <div class="form">
+                  <input autocomplete="off" id="input" type="text" placeholder="E.g. Buy Bread" name="add" required><br>
+                  <button id="add">Add Todo</button> 
+                  <button id="remove">Remove Todo</button><br>
+            </div>
+            <!-- FORM ENDS HERE   -->
+      </header>
+
+      <section>
+            <div class="main">
+                  <!-- Custom Checkbox -->
+                  
+                  <h1>Add Some of Todos</h1>
+
+                  <label class="checkbox" style="text-decoration: line-through">Buy Bread
+                  <input disabled type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="checkbox">Go To College
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="checkbox">Do Evening Brunch
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="checkbox">Do Coding
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+
+                  <label class="checkbox">Take a Nap
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="checkbox">Play Games
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox">Revise the Day
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+
+                  <span class="ion-log-in"></span>      
+                  <!-- Submit Buttom -->
+                  <input type="button" value="Add the Todo" name="addThis" id="addThis"> 
+            </div>
+
+            <div style= "width:60%; margin:40px 30px; float: left;">
+                  <h3 id="author" style="font-family: 'Cabin', sans-serif;
+                  ">Author's Note</h3><hr>
+                  <p style="color: rgba(255,255,255, 0.7);  margin-top: 40px; font-size: 18px; line-height: 25px; font-family: 'IM Fell English SC', serif;
+                  ; text-align: justify;">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus  officia porro quasi aliquid delectus quatibus
+                  ae similique perferendis, sed quas? Esse nam consequatur nece dolore porro odio officiis. In, veniam magnam!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloremque voluptatum fugit natus laudantium perspiciatis officia deserunt, quos commodi repellendus amet facere. Maiores quis distinctio delectus quod fugit! Nam, sint?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vitae ut voluptas at cum eaque soluta, aut dolores nobis quam quidem, commodi praesentium veritatis! Earum eius labore quam dignissimos dolorum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores exercitationem veniam repellendus fugiat maxime voluptatibus quae beatae iusto ad, dignissimos libero placeat quasi quas vitae nisi, ducimus magni dolore eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque et perspiciatis a qui architecto neque cupiditate, natus culpa laudantium, dolorem unde minima deserunt modi labore cumque, error repellendus quis?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore reprehenderit odit, explicabo quia quasi id numquam. Deserunt, eveniet eaque. Similique voluptates minima praesentium accusantium sit, earum iste vel sint numquam!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum exercitationem numquam sed tempore error repudiandae iure blanditiis iste! Necessitatibus suscipit harum quasi animi labore, ad amet ut impedit blanditiis repellendus.
+
+                  </p>
+            </div>
+
+            <div style="clear: both;"></div>
+
+
+            <!-- .............................. -->
+            <!-- THIS IS THE <ul> WHERE THE TODOS ARE ADDED -->
+            <!-- .............................. -->
+            <div style="width: 200px; height: 200px; background: black; margin: 0 auto;">
+                  <ul class="list" id="ul"></ul>
+            </div>
+
+
+      </section>
+      <!--  CLEAR BOTH SECTION AND FOOTER -->
+      <div style="clear: both"></div>
+      <footer style="margin-top: 20px; border: 1px solid black; border-top: 2px solid rgba(255,255,255, 0.3);">
+
+            <p style="color: chartreuse; display: block; background-color: black; text-align: center; padding: 30px; line-height: 23px;" >
+                  Author: Sameer Kumar <br> Year: 2018 <br> Date: 29/06/2018
+            </p>
+            
+      </footer>
+
+      </div>
+      <!-- <div class="container1"></div> -->
+
+      <script src="main.js"></script>
+</body>
+</html>

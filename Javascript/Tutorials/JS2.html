@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUESS GAME</title>
+	<meta name="viewport" intitial-scale="1">
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let target= Math.floor(Math.random()*10)		
+		
+
+
+		// I'll use 2 for loops
+
+		for(var i=0; i<=10; i++)
+		{
+			answer=prompt("Guess the number I'm thinking")
+			for(; answer!=target; )
+			{
+				if (answer==target) 
+				{
+					alert("DAYUMM DUDE YOU GOT IT!!!")
+					goto s;
+				}
+
+				else if(answer>=(target-10) || answer<=(target+10)) 
+				{
+					alert("Keep going your very close. I mean below 10 digits close!!");
+					break
+				}
+
+				else 
+					alert("DUHH! You're nowhere close!! ")
+					break
+			}
+		}
+
+		// while(1)
+		// { 
+		// // LOOP TO LET ME ANSWER TILL I REACH THE CORRECT ANSWER
+		// while(answer!=target)
+		// 	{
+
+		// 	answer=prompt("Guess the number I'm thinking")
+		// 	if (answer==target) {
+		// 		alert("DAYUMM DUDE YOU GOT IT!!!")
+		// 		break;
+		// 	}
+		// 	else if(answer>=(target-10) && answer<=(target+10)) {
+		// 			alert("Keep going your very close. I mean below 10 digits close!!");
+		// 			continue
+		// 		}
+		// 	else 
+		// 		alert("DUHH! You're nowhere close!! ");continue;
+		// }
+
+	</script>
+
+</body>
+</html>

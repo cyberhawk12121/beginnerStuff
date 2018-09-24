@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-1</title>
+	<link rel="icon" href="galaxy.jpg" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<!-- A VERTICAL LINE ON THE SCREEN  -->
+	<!-- <div style="width: 50%; border-right: 5px solid black;height: 200px;"></div> -->
+
+	<script type="text/javascript">
+		console.log("Hello World");
+		let x= "Hello "
+		let y= "Sameer"
+		let z= x+y
+		console.log(z)
+		let a= ['sameer', 'aman','hemant', 'upendra', 'neelam', 'suman', 'gauransh']
+		console.log(a[a.length-3])
+		// NEXT LINE IS SOMETHING NEW: PAY EXTRRRAAA ATTENTION!!!!
+		/* ............ */
+		console.log(`See I can add JS code in between ${3+3} the lines.`); // This special char is below Esc
+
+		// Next line shows the use of .shift() function
+		/* ............ */
+		console.log(a.shift())
+		console.log(a)
+		console.log(a.unshift('sameer'))
+
+		// Function coming up now. Heads up!!
+		/* ............ */
+		let myName= function(name){
+			document.write('Write your name here bitch ______. '+ name);
+		}
+		myName('(Firstname)')
+		name= "sameer";
+		userName=prompt("Enter your name here")
+		if (userName===name){
+			alert("Welcome !")
+		}
+		
+		// Random number generation
+		/* ............ */
+		randomNumber= Math.random()*Math.random()*Math.random()*Math.random()*Math.random()*Math.random()*500000
+		RandomNumber= Math.floor(randomNumber)
+		console.log(randomNumber)
+		document.write("<br>"+"This is a random number: "+randomNumber)
+		document.write("<br>"+"This is a random number rounded off: " +RandomNumber)
+
+		// DEFAULT PARAMETER
+		/* ............ */
+		let hello= function(num1=0, num2=0)
+		{
+			let total= num1+num2
+			console.log(total)
+		}
+		hello();
+
+		// USE OF FOREACH
+		/* ............ */
+		const army=[1,2,3,4,5,6,7,8];
+		function boy(){
+			console.log("Hello")
+		}
+		army.forEach(boy)
+
+
+	</script>
+
+</body>
+</html>

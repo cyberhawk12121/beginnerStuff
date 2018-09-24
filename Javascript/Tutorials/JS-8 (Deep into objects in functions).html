@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS-8 (More of Objects in functions</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let object= {
+			function1: function(name, age){
+				return	sameer={
+						game: "Last Light", // PC game
+						time: 20, 			// days
+					}
+
+				/* ....................... */
+
+				// What will the following "this" keyword access. 
+				// The one in the parent object or the child object which is in its parent function? 
+				
+				/* ....................... */
+				let addNames= this.game+name; // Random String
+				let addAge= this.time+age; 	  // Random Number
+				console.log(addNames);
+			} ,
+
+			name: "Sameer",
+			age: 20,
+			function2: function(){
+
+				/* ........................... */
+				// This function will access the objects from the function that I've made in this object i.e. from the function1()
+				/* ........................... */
+
+				access= this.function1();
+				console.log(access.game);		
+
+
+			}
+
+		}
+
+
+		objectInObject1= object.function1("Sameer", 10)
+		console.log(objectInObject1.game)
+		console.log(object.function1("Sameer"));
+		object.function2() // I've called the function that returns the property of an object which is pert of another object in a function
+	</script>
+
+</body>
+</html>

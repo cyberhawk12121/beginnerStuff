@@ -1,0 +1,33 @@
+
+	body{
+		background-image: url("foggy_sunrise_4k-2560x1440.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: white;
+	}
+
+	h3{
+		color: yellow;
+		font-family: helvetica;
+		font-size: 30px;
+	}
+
+	input{
+		width: 100%;
+	}
+
+	header{
+		background-color: #fff;
+	margin-bottom: 50px;
+	border-bottom: 3px solid #6b6c6d;
+
+	}
+
+	.navigation{
+		float: right;
+		width: 400px;
+		list-style-type: none;
+	}
+	.lists{
+		list-style-type: none;
+	}

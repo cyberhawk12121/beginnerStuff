@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Delegation--1 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+        <div class="event">
+
+            <div class="form">
+
+                <form id="Buttons" action="">
+
+                    <input class="forms" id="B1" type="button" value="Button1">
+                    <input id="B2" type="button" value="Button2">
+                    <input id="B3" type="button" value="Button3">
+                    <input id="B4" type="button" value="Button4">
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div id="paragraphEvent">
+
+            <p id="para">Hello my name is Sameer.</p>
+
+        </div>
+
+
+
+    <script>
+        
+        // Syntax:  element.addEventListenere('event', function(){...})    
+        document.querySelector('.event').addEventListener('click', clicked);
+
+        function clicked(e){
+            if(e.target.classList.contains('forms'))
+            console.log("true");
+            // console.log("");
+            
+            
+            // console.log("clicked something?");
+        }
+
+
+    // The following example shows the event bubbling phenomena. 
+    // When you click the inner element which is inside the target event
+    // The element inside will be taken action upon first. Then the bubble effect will 
+    // take the event on the upper parent element and will trigger that one. 
+
+        document.querySelector('#para').addEventListener('click', click);
+
+        function click(){                
+            // console.log(e.target.id);   // Prints the target ID
+            console.log("You clicked the paragraph");
+        }
+
+        document.querySelector('#paragraphEvent').addEventListener('click', function(){
+            console.log("you clicked the parent element of the paragraph tag, which is a div");    
+        })
+
+
+
+        
+
+    </script>
+    
+</body>
+</html> 

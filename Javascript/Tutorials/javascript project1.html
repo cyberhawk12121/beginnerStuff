@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Quiz</title>
+	<style type="text/css">
+		*{
+			font-family: helvetica;
+		}
+		body{
+			color: #ccc;
+			background: black;
+		}
+
+		.container{
+			width: 80%;
+			margin: auto;
+			border: 1px solid white;
+			padding: 50px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	<h1>THIS IS A JAVASCRIPT QUIZ</h1>
+	<hr>
+
+	<form name="quiz" onsubmit="return answers()">
+
+		<!-- QUESTION-1 -->
+		<p><strong>1. JS stands for what?</strong></p>
+		<ol>
+			<li><input id="q1a" name="q1" value="a" type="radio" name="option1">Javascript</li>
+			<li><input id="q1b" name="q1" value="b" type="radio" name="option1">Jai Sotdu</li>
+			<li><input id="q1c" name="q1" value="c" type="radio" name="option1">Jaa sutta</li>
+			<li><input id="q1d" name="q1" value="d" type="radio" name="option1">James scott</li>
+		</ol>
+
+		<!-- QUESTION-2 -->
+			<p><strong>2. What is the name of latest Uncharted game?</strong></p>
+		<ol>
+			<li><input id="q2a" name="q2" value="a" type="radio" name="option1">A Thief's End</li>
+			<li><input id="q2b" name="q2" value="b" type="radio" name="option1">New Collosus</li>
+			<li><input id="q2c" name="q2" value="c" type="radio" name="option1">Chronicles</li>
+			<li><input id="q2d" name="q2" value="d" type="radio" name="option1">India</li>
+		</ol>
+
+		<!-- QUESTION-3 -->
+			<p><strong>3. Who discovered the X-rays?</strong></p>
+		<ol>
+			<li><input id="q3a" name="q3" value="a" type="radio" name="option1">Roentgen</li>
+			<li><input id="q3b" name="q3" value="b" type="radio" name="option1">Bukowski</li>
+			<li><input id="q3c" name="q3" value="c" type="radio" name="option1">Edison</li>
+			<li><input id="q3d" name="q3" value="d" type="radio" name="option1">W.L Bragg</li>
+		</ol>
+
+		<!-- QUESTION-4 -->
+			<p><strong>4. Speed of Light is: ?</strong></p>
+		<ol>
+			<li><input id="q4a" name="q4" value="a" type="radio" name="option1">3*10^8 m/s</li>
+			<li><input id="q4b" name="q4" value="b" type="radio" name="option1">2.7798*10^8 m/s</li>
+			<li><input id="q4c" name="q4" value="c" type="radio" name="option1">348 m/s</li>
+			<li><input id="q4d" name="q4" value="d" type="radio" name="option1">299798 m/s</li>
+		</ol>
+
+		<input type="submit" name="" value="Submit Answers" style="padding: 10px; font-size: 15px;margin-left: 40px;">
+	</form>
+
+</div>
+
+<!-- /////// SCRIPT \\\\\\\ -->
+
+<script type="text/javascript">
+	
+	function answers()
+	{
+		var q1= document.forms["quiz"]["q1"].value;
+		var q2= document.forms["quiz"]["q2"].value;
+		var q3= document.forms["quiz"]["q3"].value;
+		var q4= document.forms["quiz"]["q4"].value;
+
+		for(var i=1; i<=4;i++)
+		{
+			if(eval('q'+i)==NULL || eval('q'+i)=="") {
+				alert('You missed question'+ i);
+				return false;
+			}
+		}
+
+
+ 	}
+
+</script>
+
+
+</body>
+</html>

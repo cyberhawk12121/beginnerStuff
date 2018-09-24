@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox-11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    
+
+        body{
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            width: 100%;
+            /* max-width: 960px; */
+            margin: 0 auto;
+        }
+        .container{
+            display: flex;
+            background-color: white;
+        }
+        .box{
+            height: 100px;
+            width: 100%;
+            border: 1px solid white;
+            /* flex-grow: 1;   Here It won't make any difference because all the boxes have same growth given. Even If I change it to 1 or 2 or any no. result will be same. */
+            box-sizing: border-box;
+            padding: 35px;
+        }
+        .one{
+            background-color: black;
+            color: white;
+            flex-grow: 3;
+        }
+        .two{
+            background-color: red;
+            flex-grow: 4;
+        }
+        .three{
+            background-color: green;
+        }
+        .four{
+            background-color: orange;
+        }
+        .five{
+            background-color: yellow;
+        }
+        .six{
+            background-color: aqua;
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+            <div class="box four"></div>
+            <div class="box five"></div>
+            <div class="box six"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

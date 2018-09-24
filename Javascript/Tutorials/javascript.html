@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+
+<form name="form" onsubmit="return validation()">
+	<noscript>ENTER THE SCRIPTS</noscript>
+
+	<p style="font-size: 20px;"> E-mail </p>
+	<input id="user" style="width: 100%; padding: 10px; border-radius: 5px; border:none; border: 1px solid #ccc;" id="user" type="text" name="user" autocomplete="off">
+	<span id="user_error"></span>
+
+	<p style="font-size: 20px;"> Password </p>
+	<input style="width: 100%; padding: 10px; border-radius: 5px; border:none; border: 1px solid #ccc;" type="password" id="pass" name="pass">
+	<span id="length_error"></span>
+
+	<p style="font-size: 20px;"> Confirm Password</p>
+	<input style="width: 100%; padding: 10px; border-radius: 5px; border:none; border: 1px solid #ccc;" type="password" id="passc" name="passc">
+	<span id="pass_error"></span>
+
+	<input style="padding: 10px; margin: 10px; margin-top: 30px;" type="submit" name="register" value="REGISTER">
+</form>
+
+<p>What Does HTML stands for?</p>
+<input type="radio" name="option1" id="o1">Hypertext Markup Language <br>
+<input type="radio" name="option1" id="o1">Hypertext MySql Language<br>
+<input type="radio" name="option1" id="o1">Hypertext Main Language<br>
+<input type="radio" name="option1" id="o1">Hypertext Extensive language<br>
+
+<!-- SCRIPTS -->
+<script type="text/javascript">
+
+	function validation()
+	{
+
+		var user= document.getElementById("user").value;
+		var pass= document.getElementById("pass").value;
+		var passc= document.getElementById("passc").value;
+		if (user=="") {
+			document.getElementById("user_error").innerHTML="Please fill the username";
+			return false;
+		}
+
+		if (user.length<5) {
+			document.getElementById("length_error").innerHTML= "Password must be greater than 5 characters";
+			return false;
+		}
+
+		if (pass!=passc) {
+			document.getElementById("pass_error").innerHTML= "Password do not match";
+			return false;
+		}
+
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+h1, section, footer{
+	display: block;
+}
+
+/*
+.first-container{
+	height: 1000px;
+	background-image: url('back.png');
+	background-size: contain;	
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+*/
+.style{
+
+	padding-right:0px;
+	display: inline;
+}
+.style{
+	float: right;
+	text-decoration: none;
+	color: red;
+	display: inline;
+	padding: 10px;
+	padding-top: 24px;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom: none;
+	padding-bottom: 28px;
+}
+.style:hover{
+	text-decoration: none;
+	color: white;
+	border: 2px solid #ccc;
+	transition: 0.2s;
+	box-shadow: 0px 0px 1px 1px white;
+}
+.navigation{
+	display: inline;
+	background-color: #ccc;
+}
+.button{
+	font-size: 17px;
+	padding: 20px 15px 20px 15px;
+	border-radius: 0px;
+	border-style: none;
+	border: 2px solid black;
+	color: white;
+	background-color: rgba(186, 5, 98, 0.6); 
+	box-shadow: 0px 0px 2px 2px #ccc;
+}
+
+.button:hover{
+	transition: 0.3s;
+	border: 2px solid white;
+	color: white;
+	background-color:rgba(4, 30, 71, 0.7);
+	box-shadow: 0 0 3px 3px black;
+}
+form{
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.h1{
+/*	margin-top: 200px; 
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 40px;
+	padding: 30px; 
+	font-size: 38px;
+	box-shadow: 0 0 2px 2px white;
+	color: white
+*/	
+	width: 800px; height: 300px; padding-bottom: 0; position: absolute; top: 200px;
+}
+
+.h1:hover{
+	transition: 0.3s;
+	box-shadow: 0 0 2px 2px white;
+	background-color: rgba(111, 114, 119,0.8);
+	color: black;
+}
+
+.list{
+	color: black;
+}
+
+.form{
+	display: block;
+	border-style: none;
+	font-size: 15px;
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+.form
+{
+	padding-bottom: 90px;
+	padding-top: 20px;
+	border: 2px solid #dccedd;
+	box-shadow: 0 0 1px 1px #ccc;
+	font-size: 15px;
+	margin-left: 50px;
+}
+.submit
+{
+	border: 1px solid #ccc;
+	baseline-shift: 10px;
+	margin-bottom: 40px;
+	margin-left: 50px;
+	border-radius: 0;
+}
+footer{
+	margin-bottom: 0;
+	padding-bottom: 40px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>No Promises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: rgb(20, 20, 20);
+        }
+        ul li, a{
+            text-decoration: none;
+            float: left;
+            list-style-type: none;
+            color: white;
+        }
+        a{
+            border-radius: 5px;
+            padding: 10px;
+        }
+        a:hover,:focus{
+            border: 2px solid white;
+            background-color: rgba(255, 255, 255, 0.747);
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="float: right; margin-right: 100px;">
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Pagination</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Signup</a></li>
+        </ul>
+
+    </nav>
+    <div style="clear: both;"></div>
+    <hr>
+    <script>
+
+    /* 
+    Promise is like if/else statement but cleaner. What is does is that it takes two parameters 
+    if the situation inside the function that we mentioned is found correct then one parameter 
+    will take on the output otherwise other will. 
+    We generally keep it simple and divide it into right and wrong or resolve/reject. To output 
+    result if one statement is found right and reject if found wrong. 
+    */
+
+        answer= prompt("What is 2+2?");
+        helloPromise= new Promise(function(resolve, reject){
+            if(2+2==answer){
+                resolve('Problem Solved');
+            }
+            else
+            reject("Wrong Answer");
+        })
+    
+        helloPromise.then(function(result){
+            console.log(result);
+            
+        }).catch(function(result){      // It Catches anuy error in the function execution 
+            console.log(result);
+            
+        })
+        console.log(helloPromise);  // This logs an object with the output.
+        // But our aim is to output the value of the key in that object. 
+        // This is how we'll access the key.
+
+
+        
+    </script>
+
+
+</body>
+</html>

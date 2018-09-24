@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event delegation-03</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <div id="first">
+
+        <div id="second">
+
+            <form action="" id="third">
+                <input type="Button" id="fourth" value="Button1">
+                <input type="Button" id="five" value="Button2">
+                <input type="Button" class="six" value="Button3">
+                <input type="Button" id="seven" value="Button4">
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+        
+
+        // The biggest advantage of Event delegation is that we can trigger any element 
+        // without writing a specific event for it. We will just write the event on the parent element
+        // and trigger that event for any element inside that parent element. 
+        // Just like we did this in the following example.
+        first= document.getElementById('first');
+        first.addEventListener('click', function(e){
+            if(e.target.classList.contains('six'))
+            {
+                console.log('clicked on the 3rd button')
+            }
+        })
+    </script>
+
+</body>
+</html>

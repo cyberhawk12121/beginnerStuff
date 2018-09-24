@@ -1,0 +1,16 @@
+.links li a:hover
+{
+	border: 2px solid #cccccc;
+	background-color: white;
+	color: color;
+	font-size: 16px;
+	box-shadow: 0 0 1px 1px #ccc;
+}
+.link:hover{
+	display: block;
+}
+.links
+{
+	margin-left: 20px;
+	margin-right: 100px;
+}

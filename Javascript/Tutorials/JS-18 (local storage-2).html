@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage-02</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        const localStorageContent= localStorage.getItem('names')
+        let names;
+
+        if(localStorageContent===null){
+            names= [];
+        }
+        
+        names.push('Jiaan')
+        names.push('Sunio')
+        names.push('Nobita')
+        names.push('Dorae')
+        names.push('Mon ')    
+        names.push('Tuesday')
+        localStorage.setItem('names', JSON.stringify(names)) 
+        console.log(localStorageContent);
+        
+        
+    </script>
+
+
+</body>
+</html>

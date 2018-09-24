@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS-10 (Array MEthods)</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let array= ['sameer',12,'sadsad', {}];
+		
+		// .................. //
+		// Add Element at the end of the array
+		// ................ .. //
+		array.push('Kumar');
+		console.log(array[array.length-1]); // Last element
+
+		// ......................... //
+		// Add Element at the beginning of an array
+		// ......................... // 
+		array.unshift('Aman');
+		console.log(array[0]);
+
+		// ................... // 
+		// Add element at the middle of an array // 
+		// ................... //
+		// Syntax: 
+		// <array_name>.splice(<position_of_adding>, <element to be removed>, <Element to be added>)
+		array.splice((array.length)/2, null, "inTheMiddle")
+		console.log(array)
+
+		// ................ //
+		// Iterating through the objects // 
+		// ................. //
+		let object= {
+			car: "Ferrari",
+			model: 911,
+			driver:"Sameer",
+		}
+		// Syntax: for(let <varName> in <objectname[<varname>])  NOTE: The <varname> refers the index of the object 
+		for(let one in object){
+			console.log(`${one} : ${object[one]}`)
+		}
+
+
+
+	</script>
+
+</body>
+</html>

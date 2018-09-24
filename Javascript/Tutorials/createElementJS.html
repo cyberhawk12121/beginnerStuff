@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Create Element using JS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+</head>
+<body>
+ 
+      <ul id="ul"></ul>
+
+      <script>
+            let ul= document.createElement('ul');
+            let list= document.createElement('li');
+            list.textContent= "This is a list content";
+            document.querySelector('#ul').appendChild(list);
+             
+            hello= "Hello sameer my name is ROBO-POC";
+            newArr= hello.split(' ')      // Helps is creating array out of a string.
+            console.log(newArr)
+            console.log(hello);
+            
+            
+
+      </script>
+
+</body>
+</html>

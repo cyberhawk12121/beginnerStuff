@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>JS-15 (Event Listeners</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+      <input type="button" value="Button" id="input">
+      <script>
+            // SYNTAX: element.addEventListener('event', function(){ Definition...});
+            document.querySelector('#input').addEventListener('click',() => {
+                  document.write("button pressed");
+                  console.log("Pressed!!")
+                  // document.querySelector('#input').textC ontent= "I'm Clicked";
+            })
+
+      </script>
+      
+</body>
+</html>

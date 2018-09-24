@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js-3 (To-Do List Project)</title>
+	<meta name="viewport" initia-scale="1">
+</head>
+<body>
+<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		
+		const todo= []
+		// We are pushing the contents of the arrays (from the bottom)
+		/*...........*/
+		todo.push("Brush")
+		todo.push("Breakfast")
+		todo.push("code")
+		todo.push("Sleep")
+
+		let myTodo= function(todos, index){
+			console.log(`Your task number ${index+1} is: ${todos}`);
+		}
+
+		todo.forEach(myTodo);
+
+		// SAME THING USING for() LOOP
+		/*.............*/
+		for(i=0; i<todo.length; i++){
+			console.log(`Your task number ${i+1} is: ${todo[i]}`);
+		}
+
+	</script>	
+
+</body>
+</html>

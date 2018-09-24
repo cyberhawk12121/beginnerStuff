@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <img src="IMG_20150317_141834" alt="Image"> -->
+
+        <header>
+
+            <nav class="navbar">
+
+                <ul class="nav">
+
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Signup</a></li>
+
+                </ul>
+                <div style="clear: both;"></div>
+            </nav>
+        </header>
+        
+        <section class="section-container" style="margin-top: 50px;">
+            <h1 style="font-size: 40px;"> Fill up the form</h1>
+            <form class="form" action="/login" method="POST">
+                <label for="name">Enter Your name</label>
+                <br>
+                <input autocomplete="off" class="form-name" type="text" name="name" placeholder="Enter your name">
+                <br>
+                <br><br>
+                <label for="pass">Enter Password</label> <br>
+                <input class="form-pass" type="password" placeholder="Enter Password" name="pass">
+                <br>
+                <br><br>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+
+        </section>
+
+
+        <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border-style: none;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 39, 39);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header, section, aside{
+    display: block;
+}
+
+.container{
+    width: 85%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.navbar{
+    /* box-sizing: border-box; */
+    width: 100%;
+    background-color: rgb(100, 99, 99);
+    /* height: 50px; */
+}
+
+.nav{
+    margin-right: 50px;
+}
+
+.nav a{
+    padding: 10px;
+    float: right;
+    padding-left:15px;
+    color: rgb(51, 245, 51);
+}
+
+.nav a:hover,:focus{
+    /* border: 2px solid rgb(51, 245, 51); */
+    background-color: rgb(148, 148, 148);
+    color: white;
+    transition: 0.2s;
+}
+
+/* .form{
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+} */
+
+
+/*  FORM style */
+.form-name {
+    border-radius: 3px;
+    width: 50%;
+    color: black;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form-pass{
+    border-radius: 3px;
+    width: 50%;
+    color: black;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#submit{
+    width: 51%;
+    padding: 10px;
+    background: rgb(84, 255, 84);
+    color: rgb(29, 28, 28);
+    text-decoration: bold;
+}
+
+.section-container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.section-container h1{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.795);
+    font-family: 'Roboto',
+    sans-serif;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 20px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR Mobile Devices */
+
+@media only screen and (max-width:600px){
+    *{
+        color: black;
+        font-size: 25px;
+    }
+    body{
+        background-color: rgb(155, 154, 154);
+    }
+
+    .nav{
+        display: block;
+    }
+    .nav a{
+        display: block;
+    }
+}
+

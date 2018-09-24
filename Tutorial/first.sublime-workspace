@@ -1,0 +1,376 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"com",
+				"com"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"paddingt",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"lis",
+				"list-group-item"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"mari",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"justify",
+				"justify-all"
+			],
+			[
+				"hre",
+				"hreflang\tAttr"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"widt",
+				"border-bottom-width"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"font-fa",
+				"font-feature-settings"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"marin",
+				"margin-right"
+			],
+			[
+				"w",
+				"widows"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"alig",
+				"align-content"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"m",
+				"margin-right"
+			],
+			[
+				"hi",
+				"line-height"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"align",
+				"alignment-baseline"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/Navigation and navbar.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/dropdown.htm",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/Table syntax.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/Bootstrapform.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/bootstrap.htm",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/navigation.css",
+		"/C/Users/sameer/Desktop/nav.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/style1.css",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/Layout1.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/real.css",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/Real Webpage.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/Selfmade.html",
+		"/C/Users/sameer/Desktop/Work/WEBPAGES/bootstrap.css",
+		"/C/Users/sameer/Desktop/project.css",
+		"/C/Users/sameer/Desktop/project.html",
+		"/C/Users/sameer/Desktop/sam.html",
+		"/C/Users/sameer/Desktop/Work/selfmade.css",
+		"/C/Users/sameer/Desktop/Work/Selfmade.html",
+		"/C/Users/sameer/Desktop/Work/bootstrap.htm",
+		"/C/Users/sameer/Desktop/Work/input..html",
+		"/C/Users/sameer/Desktop/Work/style1.css",
+		"/C/Users/sameer/Desktop/Work/Layout1.html",
+		"/C/Users/sameer/Desktop/bootstrap.htm",
+		"/E/bootstrap-4.0.0-beta.2/index.html",
+		"/C/Users/sameer/Desktop/Layout1.html",
+		"/E/bootstrap-4.0.0-beta.2/Bootstrap.html",
+		"/C/Users/sameer/Desktop/Layout.html",
+		"/C/Users/sameer/Desktop/style.css",
+		"/C/Users/sameer/Desktop/style1.css",
+		"/C/Users/sameer/Desktop/index.html",
+		"/C/Users/sameer/Desktop/main.css",
+		"/C/Users/sameer/Desktop/create.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "first.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Event delegation</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <style>
+      
+      body{
+            border: 2px solid black;
+            margin:0;
+      }
+      *{
+            background: rgb(252, 252, 252);
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+      }
+
+      </style>
+</head>
+<body>
+
+      <header id="click">
+
+            <div class="clicked">
+                  
+                  <li>
+                        <a class="perform" href="">Hello</a>
+                  </li>
+                  
+                  <li>
+                        <a class="perform" href="">Hello1 </a>
+                  </li>
+                  
+                  <li>
+                        <a class="perform" href="">Hello2 </a>
+                  </li>
+
+                  <li>
+                        <a class="perform" href="">Hello 3</a>
+                  </li>
+                  
+                  <li>
+                        <a class="perform" href="">Hello 5</a>
+                  </li>
+                  
+                  <li>
+                        <a class="perform" href="">Hello 6</a>
+                  </li>
+                  
+            </div>
+
+      </header>
+
+      
+
+
+<script>
+
+      document.querySelector('#click').addEventListener('click', clickEvent)
+      // Function Definition
+      function clickEvent(event) {
+            event.preventDefault();
+            if(event.target.classList.contains('perform')){
+                  event.target.parentElement.remove();
+                  
+            }
+      }
+
+</script>
+
+
+</body>
+</html>

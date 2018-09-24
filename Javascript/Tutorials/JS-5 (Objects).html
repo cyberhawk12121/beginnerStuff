@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS -5</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let object1= {
+			name: "sameer",
+			age: 19,
+			colour: "white",
+			height: 180,
+		}
+		// console.log(object1);
+		// console.log(`My name is ${object1.name}, my age is ${object1.age}, my height is ${object1.height}. DOn't ask my color, well it's ${object1.colour} `);
+		
+		// let object2= {
+		// 	name: "Upendra",
+		// 	age:40, 
+		// 	height:170, 
+		// 	colour:"wheat",
+		// }
+
+		function hello(object=false){ // We are returning another object which takes object as a parameter
+			return {
+				format1:`Hello ${object.name}, How are you? Your age is ${object.age+10}`,
+				format2:`Hello ${object.colour}, How are you? Your age is ${object.age+5}`
+			}	
+		}
+		let addOne= hello();
+		// Calling the funciton hello with the objects format1 and format2
+		console.log(addOne.format2);	
+		
+		// EXPLANATION
+		/*.........................*/
+		/* This "hello(object)" function is returning an object with properties format1 and format2.
+			Therefore the function has now become an object. 
+			To access this object's properties we have kept it inside the variable.
+			Then we accessed the properties using the . access specifier. 
+			Also this object that we made, takes another object as a parameter.
+		 */
+		 /*.........................*/
+
+		 console.log(typeof hello)
+
+		// ................... // 
+		// Another way to Initialize an object 
+		// ..................... //
+		let object = {}
+			object.name = "sameer";
+			object.age = 10;
+			console.log(object.name);
+	</script>
+
+
+</body>
+</html>

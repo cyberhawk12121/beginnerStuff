@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>PAGE</title>
+</head>
+<body>
+
+<div class="insert"></div>
+
+<script>
+    const countries = ['India', 'Australia', 'USA', 'England', 'Pakistan', 'Nepal'];
+
+    function display() {
+        setTimeout(function(){
+            // let html = '';
+            countries.forEach((country) => {
+                list= document.createElement('li');
+                list.textContent= country;
+                document.querySelector('.insert').appendChild(list);
+                // html += `<li> ${country} </li`;
+            });
+            // document.body.innerHTML = html;
+        }, 1000); // It's in milliseconds, i.e. =1 second
+    }
+
+    display();
+</script>
+</body>
+</HTML>

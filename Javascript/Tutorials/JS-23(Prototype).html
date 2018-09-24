@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Constructor Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <script>
+    
+    // Create Object constructor
+        function Object(name, age){
+            this.name= name;
+            this.age= age;
+        }
+
+
+    // Real Meaning of prototype is that we can add any function/method or data member outside of the Object braces
+    // It's purpose is to create cleaner and organized codes.
+        Object.prototype.namePrint= function(){
+            console.log(this.name)
+            document.write(" Name is " + this.name+ "<br>")    
+        }
+        Object.prototype.agePrint= function(){
+            console.log(this.age)
+            document.write("Age of his father is "+ this.age);
+        }
+
+        Object1= new Object("Sameer", 19);
+        Object2= new Object("Upendra", 50);
+    
+        Object1.namePrint();
+        Object2.agePrint();
+    </script>
+
+</body>
+</html>

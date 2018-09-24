@@ -1,0 +1,28 @@
+<<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>JS-12 (Coercion)</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+      <script>
+
+            adder= '5'+5 ;
+            console.log(adder);
+            adder1 = 5 + true;
+            console.log(adder1)
+            adder3= typeof 5+ typeof true;
+            console.log(adder3)
+
+            // COERCION: Sometimes the JS tries to interpret some weird values as 
+            // true or false based on its understanding which can be confusing sometimes.
+            // Cause we don't actually know what are evaluated as true and what as False.
+            // ............................ // 
+            //............................. //
+            // (i) EMPTY STRING/OBJECT: False, (ii) "<space>": True,  (iii) "<nameOfvariable>: False"
+            //       
+      </script>
+</body>
+</html>
